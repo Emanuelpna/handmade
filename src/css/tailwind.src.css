@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  z-index: 2;
+} 
+
+.logo {
+  font-family: "Unna";
+  font-weight: 700;
+  font-size: 18pt;
+}
+
+.logo span {
+  font-weight: 400;
+  font-size: 14pt;
+}
+
+.meetings {
+  height: 40rem;
+  position: relative;
+}
+
+.meetings h1 {
+  /* font-size: 5.5rem; */
+  text-shadow: 1px 1px 4px #28282880;
+  /* position: absolute; */
+  /* bottom: 0; */
+  z-index: 2;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.blackness {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  /* z-index: 1; */
+  background: #2828282e;
+  background: linear-gradient(to top, #2828282e, #2828282e, #2828282e, transparent);
+  -moz-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.itemThemeImg {
+  height: 140px;
+}
+
+.itemTheme {
+  margin-right: -20px;
+  margin-bottom: 5px;
+}
+
+.itemThemeText {
+  margin-right: -20px;
+  margin-bottom: 5px;
+}
+
+body {
+  background-image: url('./img/site-bg.png');
+  background-repeat: repeat;
+}
+
+@tailwind utilities;
